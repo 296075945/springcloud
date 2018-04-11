@@ -1,0 +1,6 @@
+package com.wy.eureka.provider.web;
+
+
+public class HelloController {
+
+}

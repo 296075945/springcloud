@@ -1,0 +1,5 @@
+package com.wy.eureka.model;
+
+public class User {
+
+}

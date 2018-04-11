@@ -1,0 +1,5 @@
+package com.wy.eureka.consumer.service;
+
+public interface HelloRemote {
+
+}

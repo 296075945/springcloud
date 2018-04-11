@@ -1,0 +1,18 @@
+package com.wy.eureka.consumer.web;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+import com.wy.eureka.consumer.service.HelloRemote;
+
+@RestController
+public class ConsumerController {
+
+    @Autowired
+    HelloRemote HelloRemote;
+	
+    @RequestMapping("/hello/{name}")
+    public String index(@PathVariable("name") String name) {
+        return HelloRemote.hello(name);
+    }
+
+}
